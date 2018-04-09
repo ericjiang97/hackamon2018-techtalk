@@ -135,14 +135,17 @@ And one of my team mates, Nicholas has found a bug within one of our buttons.
 
 # So, he creates a new branch to fix the bug
 
+![inline](assets/git/step1.png)
+
 ```shell
+# update our develop branch
+git checkout develop
+git pull
 # we create a new branch
 git branch fix/contact-button
 # we make the new branch the new working branch
 git checkout fix/contact-button
 ```
-
-![inline](https://i.imgur.com/mi3zwm9.png)
 
 ![original](assets/background.png)
 
@@ -150,7 +153,21 @@ git checkout fix/contact-button
 
 # He fixes the code and stages the change in commits
 
-![inline](https://i.imgur.com/bhhrRZv.png)
+![inline](assets/git/step2.png)
+
+```
+git add .
+git commit -m "new commit"
+git push
+```
+
+![original](assets/background.png)
+
+---
+
+# He fixes the code and stages the change in commits
+
+![inline](assets/git/step2a.png)
 
 ```
 git add .
@@ -164,21 +181,17 @@ git push
 
 # He then makes a PR into my develop or master branch
 
-![inline](https://i.imgur.com/gJXFPgQ.png)
+![inline](assets/git/step3.png)
+
+## Where we discuss his proposed changes
 
 ![original](assets/background.png)
 
 ---
 
-# We then Review and Discuss the Changes and Merge the Changes
+# We then merge the Changes
 
-![inline](https://i.imgur.com/gkdnQuT.png)
-
-![original](assets/background.png)
-
----
-
-![inline](https://i.imgur.com/hGVCsFv.png)
+![inline](assets/git/step4.png)
 
 ![original](assets/background.png)
 
