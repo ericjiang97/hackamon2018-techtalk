@@ -165,6 +165,12 @@ git push
 
 ---
 
+![inline](https://i.imgur.com/hGVCsFv.png)
+
+![original](assets/background.png)
+
+---
+
 # Option 2: Using Forks 🍴 for Versioning Control
 
 The best way to image a fork, is image a copy of the main repository that you own that you can _pull_, _merge_ and apply changes to.
