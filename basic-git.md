@@ -159,10 +159,26 @@ git push
 
 # Discuss and merge
 
+![inline](https://i.imgur.com/gkdnQuT.png)
+
+![original](assets/background.png)
+
 ---
 
 # Option 2: Using Forks 🍴 for Versioning Control
 
 The best way to image a fork, is image a copy of the main repository that you own that you can _pull_, _merge_ and apply changes to.
+
+![original](assets/background.png)
+
+---
+
+# Questions? <br/><br/> 🤔 🎤 📣
+
+![original](assets/background.png)
+
+---
+
+# Goodbye 👋<br/><br/> Track 2: Firebase + ReactJS for Hacks coming soon
 
 ![original](assets/background.png)
