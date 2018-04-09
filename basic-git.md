@@ -1,4 +1,5 @@
 Theme: Business Class
+autoscale: true
 text: Roboto, #006cab
 text-strong: Roboto Bold, #006dae
 text-emphasis: Roboto Light Italic
@@ -13,7 +14,7 @@ slidenumbers: false
 
 # Getting Started at Hackathons
 
-## From Gitting Started to Building a Quick Web application
+## Track 1: Gitting Started
 
 ![original](assets/background.png)
 
@@ -29,16 +30,6 @@ slidenumbers: false
 * github.com/lorderikir
 
   ![original](assets/background.png)
-
----
-
-# So what is this about?
-
-1.  Quick Guide to Git
-2.  Using GitHub for Hackathons
-3.  Building an Application using React with Firebase Integration
-
-![original](assets/background.png)
 
 ---
 
@@ -59,9 +50,9 @@ slidenumbers: false
 
 ---
 
-# So, Git is about versioning control?
+# How Git Works
 
-![inline](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTORXVbm0hzAhkjP53neKyXTsD6eQGI7uLmZ_bpT0Nl94UyLJv)
+![inline](https://tudip.com/wp-content/uploads/2017/12/GitWorkflow.png)
 
 ![original](assets/background.png)
 
@@ -80,8 +71,47 @@ slidenumbers: false
 
 ---
 
-# Using GitHub for Hackathons
+# Advanced Git
+
+Well, working with teams 👪 may be hard. There is generally two ways you can work off a branch.
+
+* Using Branches
+* Using Forks
+
+## ![original](assets/background.png)
+
+---
+
+# Option 1: Use Branches 🌳 for Versioning Control
+
+1.  Make a branch with the feature name or your own username
+2.  Every time you commit and push up
+3.  Make a Pull Request
+4.  Merge the pull request
+
+One of the best workflows is known as _GitFlow_
 
 ![original](assets/background.png)
 
 ---
+
+# GitFlow - Used with monPlan Git Workflow
+
+![inline](https://i.imgur.com/c5L8RFE.png)
+
+* **master**: branch is the key branch, everytime for release
+* **develop**: _unstable_, most of the PRs should go here
+* **'feature/\*'**, **'fix/\***, etc.: are 'for purpose' branches, these branches are for development
+* **deploy** (not shown), is for **manual** deployments to prod
+
+_This slide has been adapted from my [CI-CD talk](https://github.com/lorderikir/cicd-techtalk)_
+
+![original](assets/background.png)
+
+---
+
+# Option 2: Using Forks 🍴 for Versioning Control
+
+The best way to image a fork, is image a copy of the main repository that you own that you can _pull_, _merge_ and apply changes to.
+
+![original](assets/background.png)
