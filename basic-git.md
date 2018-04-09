@@ -73,7 +73,7 @@ slidenumbers: false
 
 # Advanced Git
 
-Well, working with teams 👪 may be hard. There is generally two ways you can work off a branch.
+Well, working with teams 👪 may be hard. There are generally two ways you can work off a repository.
 
 * Using Branches
 * Using Forks
@@ -107,6 +107,57 @@ One of the best workflows is known as _GitFlow_
 _This slide has been adapted from my [CI-CD talk](https://github.com/lorderikir/cicd-techtalk)_
 
 ![original](assets/background.png)
+
+---
+
+# So how does it work?
+
+![original](assets/background.png)
+
+---
+
+# Create a branch
+
+> ProTip: It's easier for your branch name to follow a simple pattern,typically we use something like fix/_, feature/_, refactor/\*
+
+```shell
+# we create a new branch
+git branch feature/demo-branch
+# we make the new branch the new working branch
+git checkout feature/demo-branch
+```
+
+![inline](https://i.imgur.com/mi3zwm9.png)
+
+![original](assets/background.png)
+
+---
+
+# Add Commits
+
+![inline](https://i.imgur.com/bhhrRZv.png)
+
+## We make our changes and then
+
+```
+git add .
+git commit -m "new commit"
+git push
+```
+
+![original](assets/background.png)
+
+---
+
+# Make a PR
+
+![inline](https://i.imgur.com/gJXFPgQ.png)
+
+![original](assets/background.png)
+
+---
+
+# Discuss and merge
 
 ---
 
