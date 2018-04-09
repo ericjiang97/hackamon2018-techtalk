@@ -22,14 +22,23 @@ slidenumbers: false
 
 # Hi, I'm **Eric Jiang** 👋 <br/><br/>
 
-* Currently, the Project Lead for monPlan - [monplan.apps.monash.edu](monplan.apps.monash.edu)
-* Co-founded FutureYou, GeckoDM and MARIE.js
+* Currently, the Project Lead for [monPlan](monplan.apps.monash.edu)
+* Co-founded GeckoDM and MARIE.js
+* Co-founded and Pitched FutureYou to Marketing
 * ![](assets/twitter.png) [@lorderikir](https://twitter.com/lorderikir)
 * ![](assets/website.png) https://lorderikir.me
 * ![](assets/email.png) eric.jiang@monash.edu
 * github.com/lorderikir
 
   ![original](assets/background.png)
+
+---
+
+So, I love coding 👨‍💻 and I love working in teams 👪
+
+_But what if there was a way that I good remember how the code look liked throughout its stage, for example if something went wrong and I want to go back to a previous version?_
+
+![original](assets/background.png)
 
 ---
 
@@ -71,7 +80,7 @@ slidenumbers: false
 
 ---
 
-# Advanced Git
+# Using Git within teams
 
 Well, working with teams 👪 may be hard. There are generally two ways you can work off a repository.
 
@@ -110,21 +119,27 @@ _This slide has been adapted from my [CI-CD talk](https://github.com/lorderikir/
 
 ---
 
-# So how does it work?
+# So we know that development is done incrementally
 
 ![original](assets/background.png)
 
 ---
 
-# Create a branch
+# Imagine we using Git within our practices
 
-> ProTip: It's easier for your branch name to follow a simple pattern,typically we use something like fix/_, feature/_, refactor/\*
+And one of my team mates, Nicholas has found a bug within one of our buttons.
+
+![original](assets/background.png)
+
+---
+
+# So, he creates a new branch to fix the bug
 
 ```shell
 # we create a new branch
-git branch feature/demo-branch
+git branch fix/contact-button
 # we make the new branch the new working branch
-git checkout feature/demo-branch
+git checkout fix/contact-button
 ```
 
 ![inline](https://i.imgur.com/mi3zwm9.png)
@@ -133,11 +148,9 @@ git checkout feature/demo-branch
 
 ---
 
-# Add Commits
+# He fixes the code and stages the change in commits
 
 ![inline](https://i.imgur.com/bhhrRZv.png)
-
-## We make our changes and then
 
 ```
 git add .
@@ -149,7 +162,7 @@ git push
 
 ---
 
-# Make a PR
+# He then makes a PR into my develop or master branch
 
 ![inline](https://i.imgur.com/gJXFPgQ.png)
 
@@ -157,7 +170,7 @@ git push
 
 ---
 
-# Discuss and merge
+# We then Review and Discuss the Changes and Merge the Changes
 
 ![inline](https://i.imgur.com/gkdnQuT.png)
 
@@ -171,9 +184,23 @@ git push
 
 ---
 
+# This would also work for...
+
+* Upgrades to the codebase
+* Refactoring our legacy code
+* Upgrading frameworks to newer versions
+
+_Unfortunately we won't go into fixing merge conflicts in this talk_
+
+![original](assets/background.png)
+
+---
+
 # Option 2: Using Forks 🍴 for Versioning Control
 
 The best way to image a fork, is image a copy of the main repository that you own that you can _pull_, _merge_ and apply changes to.
+
+(We won't go into much detail here.)
 
 ![original](assets/background.png)
 
