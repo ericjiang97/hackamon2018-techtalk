@@ -23,4 +23,29 @@ slidenumbers: false
 
 ---
 
+# Prerequisites
+
+* NodeJS (preferably with YarnPKG)
+* An IDE 📝
+* An Internet 🌐 Connection
+
+![original](assets/firebase-bg.png)
+
+---
+
+# What is Firebase?
+
+> Firebase is a mobile and web application development platform developed by Firebase, Inc. in 2011, then acquired by Google in 2014.
+> -- Wikipedia
+
+We are going to use Firebase Hosting, Realtime Database in this demo
+
+![original](assets/firebase-bg.png)
+
+---
+
+# What is ReactJS
+
+ReactJS is a **component-based** that is used to build user-interfaces whether its for websites (Frontend) or hybrid (ElectronJS) applications
+
 ![original](assets/firebase-bg.png)
