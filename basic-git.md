@@ -196,6 +196,19 @@ _Unfortunately we won't go into fixing merge conflicts in this talk_
 
 ---
 
+# Why is using GitFlow important?
+
+* We seperate production code and our 'work-in-progress' (WIP) code.
+* We have a clearer understanding of what each developer is working on
+* We can branch off WIP branches and merge changes in
+* Relatively easier (not always) to fix merge conflicts
+* Some CI/CD tools only run off branches (not PRs)
+* We can set our CI/CD to deployment so that it can deploy off branches (i.e. `develop` to _dev_, `master` to _staging_ or _qat_ and `deploy` to _prod_)
+
+![original](assets/background.png)
+
+---
+
 # Option 2: Using Forks 🍴 for Versioning Control
 
 The best way to image a fork, is image a copy of the main repository that you own that you can _pull_, _merge_ and apply changes to.
