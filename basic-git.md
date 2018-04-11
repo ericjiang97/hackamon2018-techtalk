@@ -24,7 +24,7 @@ slidenumbers: false
 
 * Currently, the Project Lead for [monPlan](monplan.apps.monash.edu)
 * Co-founded GeckoDM and MARIE.js
-* Co-founded and Pitched FutureYou to Marketing
+* Co-founded and Pitched FutureYou to SMC, now spun that off as a seperate project
 * ![](assets/twitter.png) [@lorderikir](https://twitter.com/lorderikir)
 * ![](assets/website.png) https://lorderikir.me
 * ![](assets/email.png) eric.jiang@monash.edu

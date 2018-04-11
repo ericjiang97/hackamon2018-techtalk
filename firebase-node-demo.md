@@ -1,11 +1,12 @@
 Theme: Business Class
+autoscale: true
 text: Roboto, #ffffff
 text-strong: Roboto Bold, #ffffff
 text-emphasis: Roboto Light Italic
 header: Roboto, #ffffff
 header-strong: Roboto Strong,#ffffff
 header-emphasis: Reklame Script, #ffffff  
-code: Fira Code Medium, #EE783F, #8B3D90, #2E59A2, #DF393F, #1EA8D9
+code: Fira Code Medium, #FFF, #FFF, #FFF, #FFF, #BBB
 background-color: #FFFFFF  
 table-separator-color: #DDDEE0
 footer: **#Hackamon2018** [MONASH.EDU/STUDENTS/HACKAMON](https://monash.edu/students/hackamon) **|** 14th APRIL 2018 | Copyright Ⓒ Eric Jiang 2018
@@ -19,7 +20,17 @@ slidenumbers: false
 
 ---
 
-![original](assets/firebase-react.png)
+# Hi, I'm **Eric Jiang** 👋 <br/><br/>
+
+* Currently, the Project Lead for [monPlan](monplan.apps.monash.edu)
+* Co-founded GeckoDM and MARIE.js
+* Co-founded and Pitched FutureYou to SMC, now spun that off as a seperate project
+* ![](assets/twitter.png) [@lorderikir](https://twitter.com/lorderikir)
+* ![](assets/website.png) https://lorderikir.me
+* ![](assets/email.png) eric.jiang@monash.edu
+* github.com/lorderikir
+
+![original](assets/firebase-bg.png)
 
 ---
 
@@ -38,7 +49,7 @@ slidenumbers: false
 > Firebase is a mobile and web application development platform developed by Firebase, Inc. in 2011, then acquired by Google in 2014.
 > -- Wikipedia
 
-We are going to use Firebase Hosting, Realtime Database in this demo
+We are going to use Firebase Hosting in this demo
 
 ![original](assets/firebase-bg.png)
 
@@ -80,15 +91,18 @@ create-react-app myapp
 
 ---
 
-We then go into our new directory and install all the depencies we need
+We then go into our new directory and install all the dependencies we need
 
 ```
-npm install material-ui react-router-dom firebase firebase-admin --save
+npm install material-ui@next react-router-dom whatwg-fetch --save
 
 # or
 
-yarn add material-ui react-router-dom firebase firebase-admin
+yarn add material-ui@next react-router-dom whatwg-fetch
 ```
+
+* We're using fetch polyfill here as `fetch` is built in natively into the browser, and it is not available for IE11 or prior
+* We're also using the beta version of material-ui v1 (it will go GA Soon)
 
 ![original](assets/firebase-bg.png)
 
@@ -96,4 +110,49 @@ yarn add material-ui react-router-dom firebase firebase-admin
 
 # Time for coding! 👨‍💻👩‍💻
 
+## Let's build an app which users can see and search all the rooms within Monash
+
 ![original](assets/firebase-bg.png)
+
+---
+
+# Initialise Firebase Project
+
+![inline](assets/fb-console.png)
+
+1.  Go to [console.firebase.google.com/](https://console.firebase.google.com/)
+2.  Create a new project
+3.  And we're good to go!
+
+![original](assets/firebase-bg.png)
+
+---
+
+# Let's build a Unit Card First
+
+```js
+// src/components/RoomCard.js
+
+import React from 'react'
+import { Card, CardContent, CardMedia, Typography } from 'material-ui'
+
+export default function UnitCard = ({roomCode, roomLocation, roomPicture}) => {
+  return (
+    <Card>
+      <CardMedia src={roomPicture}/>
+      <CardContent>
+        <Typography variant="subheading">{roomCode}</Typography>
+        <Typography variant="title">{roomLocation}</Typography>
+      </CardContent>
+    </Card>
+  )
+}
+```
+
+![original](assets/firebase-bg.png)
+
+---
+
+![original](assets/firebase-bg.png)
+
+---
