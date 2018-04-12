@@ -133,19 +133,26 @@ yarn add material-ui@next react-router-dom whatwg-fetch
 ```js
 // src/components/RoomCard.js
 
-import React from 'react'
-import { Card, CardContent, CardMedia, Typography } from 'material-ui'
+import React from "react";
+import { Card, CardMedia } from "material-ui";
+import { CardContent } from "material-ui/Card";
+import Typography from "material-ui/Typography";
 
-export default function UnitCard = ({roomCode, roomLocation, roomPicture}) => {
+export default function RoomCard({ roomCode, roomLocation, roomPicture }) {
   return (
     <Card>
-      <CardMedia src={roomPicture}/>
+      <CardMedia
+        image={roomPicture}
+        style={{
+          height: 200
+        }}
+      />
       <CardContent>
         <Typography variant="subheading">{roomCode}</Typography>
         <Typography variant="title">{roomLocation}</Typography>
       </CardContent>
     </Card>
-  )
+  );
 }
 ```
 
