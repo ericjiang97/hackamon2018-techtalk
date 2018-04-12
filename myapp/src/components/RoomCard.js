@@ -6,7 +6,12 @@ import Typography from "material-ui/Typography";
 export default function RoomCard({ roomCode, roomLocation, roomPicture }) {
   return (
     <Card>
-      <CardMedia src={roomPicture} />
+      <CardMedia
+        image={roomPicture}
+        style={{
+          height: 200
+        }}
+      />
       <CardContent>
         <Typography variant="subheading">{roomCode}</Typography>
         <Typography variant="title">{roomLocation}</Typography>

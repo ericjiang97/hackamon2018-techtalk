@@ -14,7 +14,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <RoomCard roomCode="Test" roomLocation="test" />
+        <RoomCard
+          roomCode="S11_LECTURE_HALL"
+          roomLocation="17 Rainforest Walk"
+          roomPicture="https://www.monash.edu/__data/assets/image/0009/292365/science-lecture-theatre1.jpg"
+        />
       </div>
     );
   }
