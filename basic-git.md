@@ -232,6 +232,35 @@ The best way to image a fork, is image a copy of the main repository that you ow
 
 ---
 
+# Key notes 🗒️
+
+* Version Control over Development is really important as it helps keep 'backups' and you can see the changes
+  * You can always see who pushed out the broken code with `git blame` 😈
+* Git is always useful as you can always revert broken code or changes
+* Branching and forking is basically the same,
+  * when working we typically use branches over forks as we can solve merge conflicts more easily (and locally)
+
+---
+
+# Please DO NOT ever `git push --force`
+
+![inline](https://pics.me.me/merge-conflict-git-push-force-origin-masteremegenerator-net-29177974.png)
+
+![original](assets/background.png)
+
+---
+
+# Key things to look 🔭 out for.
+
+* Merge conflicts are always the hardest part
+* Be careful of `git merge` and `git rebase` commands. Always `merge` don't `rebase`
+  * This is because rebase always applies your changes last (assumes you are always correct)
+  * When merging between branches and fixing conflicts always work with a team-mate
+
+![original](assets/background.png)
+
+---
+
 # Questions? <br/><br/> 🤔 🎤 📣
 
 ![original](assets/background.png)

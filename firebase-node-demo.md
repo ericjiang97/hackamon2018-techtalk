@@ -94,11 +94,11 @@ create-react-app myapp
 We then go into our new directory and install all the dependencies we need
 
 ```
-npm install material-ui@next react-router-dom whatwg-fetch --save
+npm install material-ui@next material-ui-icons whatwg-fetch --save
 
 # or
 
-yarn add material-ui@next react-router-dom whatwg-fetch
+yarn add material-ui@next material-ui-icons whatwg-fetch
 ```
 
 * We're using fetch polyfill here as `fetch` is built in natively into the browser, and it is not available for IE11 or prior
@@ -195,5 +195,58 @@ export default App;
 ---
 
 # Now connect it to Firebase
+
+![original](assets/firebase-bg.png)
+
+---
+
+# Firebase Configuration... ⚒️
+
+We will need to setup the configuration for Firebase
+
+```javascript
+// src/config/firebase.js
+
+// Import the Firebase modules that you need in your app.
+import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/database";
+import "firebase/datastore";
+
+// Initalize and export Firebase.
+const config = {
+  apiKey: "MY AWESOME API KEY",
+  authDomain: "MY DOMAIN",
+  databaseURL: "https://defs-a-secret-project-ddatabae.firebaseio.com",
+  projectId: "so-safe",
+  storageBucket: "wow-firebase.appspot.com",
+  messagingSenderId: "firebase-sender-id-goes-here-i-guess"
+};
+export default firebase.initializeApp(config);
+```
+
+![original](assets/firebase-bg.png)
+
+---
+
+We can also use some API calls!
+
+I recommend you using `fetch` which is a polyfill built into web-browsers, but `axios` is also great for NodeJS Development.
+
+Fetch was installed during the early development as it is not part of IE11 (Legacy Browser support!)
+
+```js
+const MONPLAN_API_URI = "monplan-api-au-prod.appspot.com";
+fetch(MONPLAN_API_URI + "/api/units")
+  .then(resp => resp.json())
+  .catch(err => console.error(error))
+  .then(data => console.log(data));
+```
+
+![original](assets/firebase-bg.png)
+
+---
+
+# Any questions? 🤔
 
 ![original](assets/firebase-bg.png)
