@@ -63,6 +63,12 @@ ReactJS is a **component-based** that is used to build user-interfaces whether i
 
 ---
 
+![inline](https://i.imgur.com/udYGC3F.png)
+
+![original](assets/firebase-bg.png)
+
+---
+
 # Installing Create-React-App
 
 CRA is a zero-configuration generator tool that can get us started up quickly
