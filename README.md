@@ -1,8 +1,8 @@
-# hackamon2018-techtalk
+# Tech Talks for Hackamon 2018
 
-Slide Decks for Tech Talk/Workshops for Hackamon 2018.
+These are the Slide Decks for Tech Talk/Workshops for Hackamon 2018.
 
-There is planned for 3 parts/sessions of th
+There is planned for 2 parts/sessions during the talk
 
 Track 1: Gitting Started
 
@@ -24,3 +24,7 @@ If working on Windows, I suggest either:
 * NodeJS
 * Yarn (preferably)
 * An IDE (I use [VSCode](https://code.visualstudio.com/))
+
+# For Presenters
+
+Open the markdown files in [Deckset](https://decksetapp.com)
