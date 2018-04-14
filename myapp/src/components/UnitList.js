@@ -12,7 +12,20 @@ const styles = {
 class UnitList extends React.Component {
   render() {
     const { unitList } = this.props;
-    return <div />;
+    return (
+      <div>
+        <List>
+          <List component="nav">
+            <ListItem button>
+              <ListItemText primary="Trash" />
+            </ListItem>
+            <ListItem button component="a" href="#simple-list">
+              <ListItemText primary="Spam" />
+            </ListItem>
+          </List>
+        </List>
+      </div>
+    );
   }
 }
 
