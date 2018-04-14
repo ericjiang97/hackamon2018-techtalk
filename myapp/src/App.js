@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import RoomCard from "./components/RoomCard";
+import * as Firebase from "./config/firebase";
+var defaultDatabase = firebase.database();
 
 class App extends Component {
   render() {
